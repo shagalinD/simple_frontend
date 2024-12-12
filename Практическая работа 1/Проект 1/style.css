@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid gray;
+  margin: 2%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  border-bottom: 2px solid gray;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  padding: 0 1%;
+  border-bottom: 2px solid grey;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+.logo * {
+  margin: auto;
+  margin-right: 2px;
+  text-align: right;
+}
+
+#logoImg {
+  width: 40px;
+  border-radius: 50%;
+  margin: 1% 2%;
+}
+
+#pages {
+  border-bottom: 2px solid grey;
+  padding: 1% 1% 1% 2%;
+  text-align: center;
+}
+
+#pages * {
+  margin-right: 2%;
+}
+
+.navigation {
+  min-width: 10px;
+  max-width: 300px;
+  padding-right: 5px;
+}
+
+.nav {
+  margin: auto;
+  display: block;
+}
+
+.navitationTitle {
+  font-weight: bold;
+}
+
+.text {
+  border-left: 2px solid grey;
+  flex: 3;
+  margin: 0px;
+  padding: 15px;
+}
+
+.textTitle {
+  margin-top: 0px;
+}
+
+footer {
+  text-align: center;
+}
+
+.contacts {
+  float: right;
+  position: relative;
+  right: 5px;
+  bottom: 3px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.images * {
+  flex: 1;
+  max-width: 80%;
+  margin: 5px;
+  text-align: center;
+}
+
+.images div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование по горизонтали */
+  max-width: 80%;
+  margin: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}

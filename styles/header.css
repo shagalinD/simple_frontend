@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: clamp(14px, 2vw + 1rem, 20px);
+}
+
+body * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+header p {
+  font-family: cursive;
+  background: linear-gradient(to right, red, blue);
+  background-clip: text;
+  color: transparent;
+}
+
+.logo * {
+  margin: auto;
+  margin-right: 2px;
+  text-align: right;
+}
+
+#logoImg {
+  width: 75px;
+  border-radius: 5%;
+  margin: 1% 2%;
+}
+
+@media (max-width: 770px) {
+  #pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 1% 1% 1% 2%;
+    background-color: #fff;
+    text-align: center;
+    z-index: 50;
+  }
+}
+
+@media ((min-width: 770px)) {
+  #pages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 1% 1% 1% 2%;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 50;
+  }
+}
+
+#pages * {
+  padding: 10px 2%;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+#pages *:hover {
+  background-color: rgb(208, 253, 255);
+  text-decoration: none;
+}
+
+#pages *:active {
+  background-color: rgb(180, 247, 250);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  border-bottom: 1px solid black;
+  overflow: auto;
+  justify-content: space-between;
+}

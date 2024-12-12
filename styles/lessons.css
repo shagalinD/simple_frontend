@@ -1,0 +1,203 @@
+body {
+  justify-content: center;
+  scroll-behavior: smooth; /* Для плавной прокрутки */
+  margin: 0px;
+}
+
+.body {
+  font-family: system-ui;
+}
+
+footer {
+  text-align: center;
+}
+
+.switchTerms {
+  position: relative;
+  float: right;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.switchTerms::after {
+  content: '';
+  background-color: rgb(180, 247, 250);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  z-index: -1;
+  transition: all 0.2s ease-out;
+}
+
+.switchTerms.secondActive::after {
+  content: '';
+  background-color: rgb(180, 247, 250);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  transform: translateX(100%);
+  bottom: 0px;
+  right: 0px;
+  border-radius: initial;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: -1;
+  transition: all 0.2s ease-out;
+}
+
+.switchTerms button {
+  font-size: large;
+  cursor: pointer;
+  margin: 0px;
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+}
+
+.switchTerms .firstTerm {
+  border-right: 1px solid black;
+}
+
+@media (max-width: 770px) {
+  .switchTerms::after {
+    content: '';
+    background-color: rgb(180, 247, 250);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: initial;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: -1;
+  }
+
+  .switchTerms.secondActive::after {
+    content: '';
+    background-color: rgb(180, 247, 250);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: initial;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: -1;
+    transform: translateY(100%);
+  }
+
+  .switchTerms button {
+    font-size: large;
+    cursor: pointer;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+    display: block;
+  }
+
+  .switchTerms .firstTerm {
+    border: initial;
+    border-bottom: 1px solid black;
+  }
+}
+
+.contacts {
+  float: right;
+  position: relative;
+  right: 5px;
+  bottom: 3px;
+}
+
+main {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+h1 {
+  margin: 20px 0 0 20px;
+}
+
+h3,
+h5 {
+  margin: 50px 0 20px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.table {
+  width: 90%;
+}
+
+table {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 95%;
+  flex-shrink: none;
+}
+
+tr:hover {
+  background-color: rgb(231, 253, 255);
+  cursor: pointer;
+}
+
+td:nth-of-type(1),
+td:nth-of-type(3),
+td:nth-of-type(4) {
+  text-align: center;
+}
+
+td,
+th {
+  padding: 5px;
+  text-decoration-color: d;
+  border: 1px solid black;
+}
+
+th {
+  background-color: rgb(208, 253, 255);
+}
+
+.address {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  flex-shrink: 0;
+  height: auto;
+  aspect-ratio: 3 / 2; /* Поддержка */
+}
+
+.map {
+  width: 90%;
+  height: 80%;
+}
+
+embed {
+  display: block;
+  margin: 0 auto 40px auto;
+  width: 90%;
+  height: 600px;
+}
+
+@media (max-width: 770px) {
+  table {
+    font-size: 14px;
+  }
+}

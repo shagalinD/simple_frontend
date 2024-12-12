@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://avatars.mds.yandex.net/i?id=ea0a1a5af1eb74cb848bcbdb53f18691-5450165-images-thumbs&n=13"
+      type="image/x-icon"
+    />
+    <title>Зайчики котята</title>
+
+    <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/styleForm.css" />
+    <link rel="stylesheet" href="./styles/pageNav.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/images.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header id="header">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=2de8360a65a1c74003ebc5e8a6d2b623aec27342-3979426-images-thumbs&n=13"
+          alt="image not found"
+          id="logoImg"
+        />
+
+        <nav class="logo">
+          <p class="person">Группа ЭФБО-01-23</p>
+          <p class="person">Шагалин Дмитрий Эдуардович</p>
+        </nav>
+      </header>
+
+      <div id="pages">
+        <a href="welcome.html">Главная</a>
+        <a href="lessons.html">Первый семестр</a>
+        <a>Второй семестр</a>
+        <a href="services.html">Услуги</a>
+        <a>Авторизация</a>
+      </div>
+
+      <main>
+        <button id="scrollToTop"></button>
+
+        <div class="navigation">
+          <div class="navigationCont">
+            <p class="navitationTitle">Навигация по странице</p>
+            <a class="nav">Разработка веб-приложений</a>
+          </div>
+        </div>
+
+        <div class="text">
+          <h2 class="textTitle">Разработка веб-приложений</h2>
+          <div class="imagesContainer">
+            <h2>Наши услуги</h2>
+            <div class="images">
+              <div>
+                <img
+                  class="image1"
+                  src="https://avatars.mds.yandex.net/i?id=c977ca3b215cbb7eb93756384022b966bde0c219-9290563-images-thumbs&n=13"
+                  alt=""
+                />
+                <p>Корпоративный сайт</p>
+              </div>
+              <div>
+                <img
+                  class="image2"
+                  src="https://avatars.mds.yandex.net/i?id=d91d85bbd9e3d26dddf0c3bae618d14ee04b93af-5876973-images-thumbs&n=13"
+                  alt=""
+                />
+                <p>Интернет-магазин</p>
+              </div>
+              <div>
+                <img
+                  class="image3"
+                  src="https://i.pinimg.com/736x/54/19/cf/5419cf632de64b60effc110beb6ddaeb.jpg"
+                  alt=""
+                />
+                <p>Сайт-визитка</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="order-slider">
+            <div class="order" id="order-display">
+                <img src="https://avatars.mds.yandex.net/i?id=d39805a5b73ec8257c2161e5f3929853ef444fec-5016167-images-thumbs&n=13" alt="Товар 1" id="order-image">
+                <button id="order-btn">Заказать</button>
+            </div>
+            <button id="next-order-btn">Вперед</button>
+        </div> -->
+
+          <p class="mainText">
+            Мы продаем бесплатно без смс и регистрации в хорошем качестве все
+            самое лучшее, что вам когда-либо нужно было. Однако будьте
+            осторожны!!! Товар слишком крутой классный можете сойти с ума с того
+            какой он классный как и я в целом, но в общем-то берите короче.
+          </p>
+        </div>
+      </main>
+      <footer>
+        <div class="contacts">
+          <a href="https://vk.com/sho_hochite"
+            ><img
+              src="https://avatars.mds.yandex.net/i?id=ac8afb5ad603b3581f7c3d361db08c4f39b06c5f-4349183-images-thumbs&n=13"
+              alt=""
+              width="20"
+          /></a>
+          <a href=""
+            ><img
+              src="https://img.icons8.com/?size=48&id=16713&format=png"
+              alt=""
+              width="22"
+          /></a>
+        </div>
+        <p>&copy; Шагалин Дмитрий Эдуардович, 2024</p>
+      </footer>
+    </div>
+
+    <div class="formCont">
+      <div class="form">
+        <button class="close-button">&times;</button>
+        <h2>Разработка веб-приложения</h2>
+        <br />
+        <p id="text">
+          Заполните форму и мы обзятательно свяжемся с вами в ближайшее время!
+        </p>
+
+        <br />
+        <form action="">
+          <label class="line"
+            >Как вас зовут?
+            <input
+              name="fullName"
+              class="inputForm"
+              placeholder="Иванов Иван Иванович"
+              type="text"
+          /></label>
+
+          <label class="line"
+            >Ваш e-mail
+            <input
+              name="email"
+              class="inputForm"
+              placeholder="Ivanov@mail.com"
+              type="email"
+          /></label>
+
+          <label class="line"
+            >Телефон
+            <input
+              name="phoneNumber"
+              class="inputForm"
+              type="phone"
+              placeholder="89859663930"
+              pattern="[0-9]*"
+          /></label>
+
+          <label class="line">
+            Страна
+            <select name="country" class="inputForm">
+              <option value="choise">Выберите страну</option>
+              <option value="Russian">Россия</option>
+              <option value="USA">США</option>
+              <option value="France">Франция</option>
+              <option value="Italy">Италия</option>
+            </select>
+          </label>
+
+          <label class="line"
+            >Дата
+            <input name="currentDate" class="inputForm" type="date" value=""
+          /></label>
+
+          <label class="line"
+            >Комментарий
+            <textarea name="comment" class="inputForm" name=""></textarea>
+          </label>
+
+          <label class=""
+            ><input
+              name="accepted"
+              class="inputForm"
+              id="checkbox"
+              type="checkbox"
+            />Согласен на обработку моих персональных данных</label
+          >
+          <div class="thanks">Заявка успешно отправлена!!</div>
+
+          <button class="sendForm" type="submit" value="">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="./scripts/services.js"></script>
+  <script src="./scripts/appForm.js"></script>
+  <script src="./scripts/navigation.js"></script>
+</html>

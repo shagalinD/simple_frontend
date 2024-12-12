@@ -1,0 +1,51 @@
+body {
+  scroll-behavior: smooth; /* Для плавной прокрутки */
+  margin: 0px;
+}
+
+.bodyDarken {
+  transition: 0.3s;
+  filter: brightness(70%);
+}
+
+body p {
+  font-weight: 400;
+}
+
+.body {
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+  border-bottom: 1px solid black;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text {
+  margin: 0px;
+  padding: 25px;
+}
+
+.textTitle {
+  margin-top: 0px;
+}
+
+footer {
+  text-align: center;
+}
+
+.contacts {
+  float: right;
+  position: relative;
+  right: 5px;
+  bottom: 3px;
+}
